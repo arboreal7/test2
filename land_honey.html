@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Липовый мёд | Landing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.4">
+        
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(57072115, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+        });
+        </script>
+        <!-- /Yandex.Metrika counter -->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="css/honey_style.css">
+    </head>
+    <body>
+        <div class="pole">
+           <img id="logo" src="honey_img/logo.png">
+           <span id="slogan">НАШ МЁД НАСТОЯЩИЙ ЛИПОВЫЙ!</span>
+           
+           <div class="left_side">
+               
+            <img class="zaman" src="honey_img/vinni.png">
+            <p class="zaman">Постоянный контроль <br>специалистов</p>
+            
+            <img class="zaman" src="honey_img/pyatak.png">
+            <p class="zaman">Круглосуточная охрана <br>пасеки</p>
+            
+            <img class="zaman" src="honey_img/maja.png">
+            <p class="zaman">Наши пчелы самые<br>правильные</p>
+            
+           </div>
+           
+           
+           <div class="right_side">
+               
+            
+               
+            <span  id="menu1"><img src="honey_img/menu.png" onmouseover="ChangeOver1(this)" onmouseout="ChangeOut1(this)" ></span>
+            <span  id="menu2"><img src="honey_img/menu.png" onmouseover="ChangeOver2(this)" onmouseout="ChangeOut2(this)" ></span>
+            <span  id="menu3"><img src="honey_img/menu.png" onmouseover="ChangeOver3(this)" onmouseout="ChangeOut3(this)" ></span>
+            
+            <span id="menu_a1"><img src="honey_img/menu_a.png" ></span>
+            <span id="menu_a2"><img src="honey_img/menu_a.png" ></span>
+            <span id="menu_a3"><img src="honey_img/menu_a.png" ></span>
+            
+            <span id="txt_menu1">О&nbsp;НАС</span>
+            <span id="txt_menu2">МЁД</span>
+            <span id="txt_menu3">ПАСЕКА</span>   
+            
+            
+            <div id="honey_0">           
+                 <img  src="honey_img/honey.png">
+                 <p id="txt_zakaz_c">Prise: 1 Kg - 15.8 nzd </p>
+            </div>
+            
+            <div id="honey_1">           
+                 <img id="honey" src="honey_img/honey.png">
+                 <img id="zakaz" src="honey_img/zakaz.png" onmouseover="ChangeOver_z(this)" onmouseout="ChangeOut_z(this)" >
+                 <img id="zakaz_a" src="honey_img/zakaz_a.png" >
+                 <p id="txt_zakaz">ЗАКАЗАТЬ</p>
+            </div>
+            
+            <div id="comand"> 
+                <span id="com_txt_0">Наша&nbsp;команда:</span>
+                <img id="com_img_1" src="honey_img/kris.png">
+                <span id="com_txt_1">Генеральный&nbsp;директор&nbsp;-&nbsp;человек&nbsp;с многолетним опытом управления предприятием.</span>
+                <img id="com_img_2" src="honey_img/tigra.png">
+                <span id="com_txt_2">Менеджер&nbsp;по&nbsp;работе&nbsp;с&nbsp;клиентами&nbsp;- настоящий профессионал своего дела, учтёт все ваши пожелания.</span>
+                <img id="com_img_3" src="honey_img/sova.png">
+                <span id="com_txt_3">Главный&nbsp;бухгалтер&nbsp;-&nbsp;подсчитает&nbsp;всё точно и в срок.</span>
+            </div>
+            
+            <div id="paseka">           
+                <span id="com_txt_0">Наша&nbsp;пасека:</span>
+                <img id="com_img_1" src="honey_img/map.png">
+            </div>
+            
+           </div>
+        
+        </div>
+        <script>
+        function ChangeOver1() {document.getElementById('menu_a1').style.display = "block";}
+        function ChangeOut1() {document.getElementById('menu_a1').style.display = "none";}
+        
+        function ChangeOver2() {document.getElementById('menu_a2').style.display = "block";}
+        function ChangeOut2() {document.getElementById('menu_a2').style.display = "none";}
+        
+        function ChangeOver3() {document.getElementById('menu_a3').style.display = "block";}
+        function ChangeOut3() {document.getElementById('menu_a3').style.display = "none";}
+        
+        function ChangeOver_z() {document.getElementById('zakaz_a').style.display = "block";}
+        function ChangeOut_z() {document.getElementById('zakaz_a').style.display = "none";}
+        
+        document.getElementById('menu1').addEventListener( "click" , function() { document.getElementById('comand').style.display = "block";});
+        document.getElementById('menu2').addEventListener( "click" , function() { document.getElementById('honey_1').style.display = "block";});
+        document.getElementById('menu3').addEventListener( "click" , function() { document.getElementById('paseka').style.display = "block";});
+        
+        document.getElementById('menu1').addEventListener( "click" , function() { document.getElementById('honey_0').style.display = "none"; document.getElementById('honey_1').style.display = "none"; document.getElementById('paseka').style.display = "none";});
+        document.getElementById('menu2').addEventListener( "click" , function() { document.getElementById('honey_0').style.display = "none"; document.getElementById('comand').style.display = "none"; document.getElementById('paseka').style.display = "none";});
+        document.getElementById('menu3').addEventListener( "click" , function() { document.getElementById('honey_0').style.display = "none"; document.getElementById('honey_1').style.display = "none"; document.getElementById('comand').style.display = "none";});
+        </script>
+    </body>
+</html>

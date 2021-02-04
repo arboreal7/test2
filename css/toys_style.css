@@ -1,0 +1,778 @@
+
+.vse {min-height: 100%; position: relative; }
+
+@media (min-width: 1200px){ /*ПК дизайн*/
+
+html, body {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    font-size: 19px;
+    font-family: Candara;
+    height: 100%;
+}
+
+li {display: inline;}
+
+a {text-decoration: none; color: black}
+
+
+
+
+.pole {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+    z-index: 8;
+    height: 100%
+    }
+
+#back_img {display: block;
+           z-index: 5;
+           position: absolute;
+           top: 60px;
+}
+
+#back_img_pl {display: none}
+#back_img_m {display: none}
+
+#back_img_post {z-index: 4;
+           position: relative;
+}
+
+#hat {
+    position: absolute;
+    width: 1920px;
+    height: 60px;
+    background-color: #6d7440;
+    z-index: 7;
+    box-shadow: 2px 2px 5px 3px;
+}
+
+.header {
+    position: relative;
+   /* background: red;*/
+    height: 770px;
+}
+
+
+
+
+#logo {position: absolute; top: 10px; left: 0px;}
+#slogo {position: absolute; top: 20px; left: 100px; font-size: 14px;}
+#menu {position: absolute; top: 0px; left: 350px; font-size: 19px;}
+#menu > li > a:hover {color: white}
+.menu_m { display: none}               
+.menu_min { display: none}
+
+#zvonok {position: absolute; top: 7px; left:  1000px; font-size: 19px; font-weight: bold; text-decoration: underline;}
+#zvonok > a:hover {color: white}
+
+#whatsapp {position: absolute; top: 33px; left: 1000px;}
+#whatsapp_tel {position: absolute; top: 30px; left:  1030px; font-weight: bold;}
+
+#head_txt_1 {position: absolute; top: 200px; left: 200px; font-size: 47px;  font-weight: bold;}
+#head_txt_2 {position: absolute; top: 250px; left: 400px; font-size: 47px;  font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#head_txt_3 {position: absolute; top: 400px; left: 320px; font-size: 47px;  font-family: Segoe Print; font-weight: bold; color: #454d10;}
+#head_txt_4 {position: absolute; top: 470px; left: 320px; font-size: 47px;  font-family: Segoe Print; font-weight: bold; color: #454d10;}
+#druz {position: absolute; top: 600px; left: 480px; background-color: #34340d; width: 250px; height: 45px; text-align: center; border-radius: 5px; box-shadow: 2px 2px 5px 3px;}
+#druz span {font-size: 25px; color: white; position: relative; top: 5px; }
+
+.o_nas {
+    position: relative;
+    /*background: blue;*/
+    height: 700px;
+}
+
+#o_nas_1 {position: absolute; top: 90px; left: 550px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#o_nas_2 {position: absolute; top: 210px; left: 620px;}
+#o_nas_3 {position: absolute; top: 260px; left: 620px;}
+#o_nas_4 {position: absolute; top: 214px; left: 690px;}
+#o_nas_5 {position: absolute; top: 210px; left: 0px;}
+#o_nas_6 {position: absolute; top: 600px; left: 450px;}
+
+.druzya {
+    position: relative;
+    z-index: 1;
+    height: 850px;
+}
+
+#druzya_1 {position: absolute; top: 50px; left: 540px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#druzya_2 {position: absolute; top: 125px; left: 350px;}
+#druzya_3 {position: absolute; top: 155px; left: 300px;}
+#druzya_4 {position: absolute; top: 650px; left: 555px;}
+
+#igr_1 {position: absolute; top: 230px; left: 470px; z-index: 10}
+#igr_2 {position: absolute; top: 230px; left: 590px; z-index: 10}
+#igr_3 {position: absolute; top: 230px; left: 710px; z-index: 10}
+#igr_4 {position: absolute; top: 230px; left: 830px; z-index: 10}
+#igr_5 {position: absolute; top: 450px; left: 470px; z-index: 10}
+#igr_6 {position: absolute; top: 450px; left: 590px; z-index: 10}
+#igr_7 {position: absolute; top: 450px; left: 710px; z-index: 10}
+#igr_8 {position: absolute; top: 450px; left: 830px; z-index: 10}
+
+#igr_1_n {position: absolute; top: 200px; left: 90px; z-index: 1; display: block; }
+#igr_1_b {position: absolute; top: 200px; left: 90px; z-index: 10; display: none;}
+#igr_2_b {position: absolute; top: 200px; left: 90px; z-index: 10; display: none;}
+#igr_3_b {position: absolute; top: 200px; left: 90px; z-index: 10; display: none;}
+#igr_4_b {position: absolute; top: 200px; left: 90px; z-index: 10; display: none;}
+#igr_5_b {position: absolute; top: 200px; left: 90px; z-index: 10; display: none;}
+#igr_6_b {position: absolute; top: 200px; left: 90px; z-index: 10; display: none;}
+#igr_7_b {position: absolute; top: 200px; left: 90px; z-index: 10; display: none;}
+#igr_8_b {position: absolute; top: 200px; left: 90px; z-index: 10; display: none;}
+
+#igr_zakaz {position: absolute; top: 770px; left: 90px; background-color: #e5d2aa; width: 322px; height: 70px; text-align: center; border: 4px solid #6d7440; }
+#igr_zakaz span {font-size: 25px; color: black; position: relative; top: 18px; }
+
+#druzya_fb {position: absolute; top: 650px; left: 870px; cursor: pointer;}
+#druzya_vk {position: absolute; top: 650px; left: 900px; cursor: pointer;}
+
+.axes {
+    position: relative;
+
+    height: 750px;
+}
+
+#axes_img {position: absolute; top: 40px; left: 150px;}
+#axes_1 {position: absolute; top: 20px; left: 500px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#axes_2 {position: absolute; top: 100px; left: 270px;}
+#axes_3 {position: absolute; top: 125px; left: 520px;}
+#axes_4 {position: absolute; top: 165px; left: 320px;}
+#axes_5 {position: absolute; top: 500px; left: 500px;}
+#axes_m {display: none}
+
+#axes_fb {position: absolute; top: 600px; left: 830px; cursor: pointer;}
+#axes_vk {position: absolute; top: 600px; left: 860px; cursor: pointer;}
+
+#axes_zakaz {position: absolute; top: 620px; left: 460px; background-color: #34340d; width: 300px; height: 50px; text-align: center; border-radius: 5px; box-shadow: 2px 2px 5px 3px;}
+#axes_zakaz span {font-size: 25px; color: white; position: relative; top: 10px; }
+
+
+.pochemu {
+    position: relative;
+
+    height: 800px;
+}
+
+
+#pochemu_txt {position: absolute; top: 30px; left: 500px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#pochemu_1 {position: absolute; top: 130px; left: 450px;}
+#pochemu_2 {position: absolute; top: 210px; left: 450px;}
+#pochemu_3 {position: absolute; top: 290px; left: 450px;}
+#pochemu_4 {position: absolute; top: 370px; left: 450px;}
+#pochemu_5 {position: absolute; top: 450px; left: 450px;}
+#pochemu_6 {position: absolute; top: 530px; left: 450px;}
+#pochemu_7 {position: absolute; top: 610px; left: 450px;}
+
+#pochemu_img {position: absolute; top: 30px; left: 100px;}
+#pochemu_img_m {display: none}
+#pochemu_img_1 {position: absolute; top: 135px; left: 420px;}
+#pochemu_img_2 {position: absolute; top: 215px; left: 420px;}
+#pochemu_img_3 {position: absolute; top: 295px; left: 420px;}
+#pochemu_img_4 {position: absolute; top: 375px; left: 420px;}
+#pochemu_img_5 {position: absolute; top: 455px; left: 420px;}
+#pochemu_img_6 {position: absolute; top: 535px; left: 420px;}
+#pochemu_img_7 {position: absolute; top: 615px; left: 420px;}
+
+.otzovi {
+    position: relative;
+
+    height: 850px;
+}
+
+#otzovi_1 {position: absolute; top: 50px; left: 500px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#otzovi_2 {position: absolute; top: 150px; left: 50px; width: 500px; text-align: justify}
+#otzovi_3 {position: absolute; top: 150px; left: 650px; width: 500px; text-align: justify}
+
+#otzovi_img_1 {position: absolute; top: 620px; left: 30px; }
+#otzovi_img_2 {position: absolute; top: 620px; left: 900px; }
+
+
+.contact {
+    position: relative;
+
+    height: 700px;
+}
+
+#contact_img {position: absolute; top: 110px; left: 0px; box-shadow: -2px -2px 5px 3px;}
+#contact_txt_1 {position: absolute; top: 0px; left: 500px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#contact_txt_2 {position: absolute; top: 80px; left: 600px; width: 600px; }
+#contact_form {position: absolute; top: 250px; left: 600px; }
+
+#contact_1 {position: absolute; top: 40px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 250px; height: 30px; }
+#contact_2 {position: absolute; top: 90px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 250px; height: 30px;}
+#contact_3 {position: absolute; top: 140px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 250px; height: 30px;}
+#contact_4 {position: absolute; top: 190px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 350px; height: 70px;}
+#contact_5 {position: absolute; top: 275px; left: 50px; color: white; background-color: #34340d; width: 150px; height: 30px; text-align: center; border-radius: 3px; box-shadow: 2px 2px 5px 3px black;}
+
+
+#foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+    }
+
+#foot_1 {position: absolute; bottom:  15px; left: 100px; color: white; } 
+#foot_2 {position: absolute; bottom:  15px; left: 450px; color: white; }
+#foot_3 {position: absolute; bottom:  15px; left: 800px; color: white; }
+
+#foot_fb {position: absolute; bottom:  12px; left: 670px;  cursor: pointer; }
+#foot_vk {position: absolute; bottom:  12px; left: 700px;  cursor: pointer; }
+ 
+#foot_w {position: absolute; bottom:  15px; left: 770px;  }
+#foot_vv {position: absolute; bottom:  15px; left: 1000px; width: 150px; height: 30px; background-color: #34340d; text-align: center; border-radius: 3px; box-shadow: 2px 2px 5px 3px black; color: white;}
+#foot_vv span { color: white; position: relative; top: 3px; }
+
+#fut {
+    position: absolute;
+    bottom: 0;
+    width: 1920px;
+    height: 60px;
+    background-color: #6d7440;
+    z-index: 7;
+    }
+
+@font-face {
+ 
+font-family: 'Segoe Print'; 
+
+src: url('../fonts/segoepr.ttf') format('truetype'); 
+font-style: normal; 
+font-weight: normal; 
+}         
+    
+@font-face {
+ 
+font-family: 'Candara'; 
+
+src: url('../fonts/Candara.ttf') format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px ) and (max-width: 1200px){ /*Планшетный дизайн*/
+
+html, body {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: Candara;
+    height: 100%;
+}
+
+li {display: inline;}
+
+a {text-decoration: none; color: black}
+
+
+
+
+.pole {
+    position: relative;
+    margin: auto;
+    width: 750px;
+    z-index: 8;
+    }
+
+#back_img {display: none}
+#back_img_pl {z-index: 5;
+           position: absolute;
+           top: 60px;
+           display: block;}
+#back_img_m {display: none}
+
+
+#back_img_post {z-index: 4;
+           position: relative;
+}
+
+#hat {
+    position: absolute;
+    width: 1200px;
+    height: 60px;
+    background-color: #6d7440;
+    z-index: 7;
+    box-shadow: 2px 2px 5px 3px;
+}
+
+.header {
+    position: relative;
+    height: 770px;
+   /* background-color: red;*/
+}
+
+#logo {position: absolute; top: 10px; left: 0px;}
+#slogo {display: none}
+#menu {position: absolute; top: 0px; left: 50px; font-size: 18px;}
+#menu > li > a:hover {color: white}
+.menu_m { display: none}               
+.menu_min { display: none} 
+
+#zvonok {position: absolute; top: 7px; left:  600px; font-size: 19px; font-weight: bold; text-decoration: underline;}
+#zvonok > a:hover {color: white}
+
+#whatsapp {position: absolute; top: 33px; left: 600px;}
+#whatsapp_tel {position: absolute; top: 30px; left:  630px; font-weight: bold;}
+
+#head_txt_1 {position: absolute; top: 200px; left: 120px; right: 120px; font-size: 47px;  font-weight: bold; text-align: center;}
+#head_txt_2 {position: absolute; top: 300px; left: 180px; font-size: 47px;  font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#head_txt_3 {position: absolute; top: 420px; left: 100px; font-size: 47px;  font-family: Segoe Print; font-weight: bold; color: #454d10;}
+#head_txt_4 {position: absolute; top: 470px; left: 100px; font-size: 47px;  font-family: Segoe Print; font-weight: bold; color: #454d10;}
+#druz {position: absolute; top: 600px; left: 240px; background-color: #34340d; width: 250px; height: 45px; text-align: center; border-radius: 5px; box-shadow: 2px 2px 5px 3px;}
+#druz span {font-size: 25px; color: white; position: relative; top: 5px; }
+
+.o_nas {
+    position: relative;
+    /*background: blue;*/
+    height: 950px;
+}
+
+#o_nas_1 {position: absolute; top: 50px; left: 330px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#o_nas_2 {position: absolute; top: 115px; left: 50px;}
+#o_nas_3 {position: absolute; top: 150px; left: 50px; right: 50px;}
+#o_nas_4 {position: absolute; top: 120px; left: 125px;}
+#o_nas_5 {position: absolute; top: 470px; left: 100px;}
+#o_nas_6 {position: absolute; top: 870px; left: 220px;}
+
+.druzya {
+    position: relative;
+    /*background: red;*/
+    z-index: 1;
+    height: 900px;
+}
+
+#druzya_1 {position: absolute; top: 50px; left: 300px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#druzya_2 {position: absolute; top: 125px; left: 150px;}
+#druzya_3 {position: absolute; top: 155px; left: 80px;}
+#druzya_4 {position: absolute; top: 800px; left: 370px;}
+
+#igr_1 {position: absolute; top: 190px; left: 380px; z-index: 10}
+#igr_2 {position: absolute; top: 190px; left: 490px; z-index: 10}
+#igr_3 {position: absolute; top: 190px; left: 600px; z-index: 10}
+#igr_4 {position: absolute; top: 400px; left: 380px; z-index: 10}
+#igr_5 {position: absolute; top: 400px; left: 490px; z-index: 10}
+#igr_6 {position: absolute; top: 400px; left: 600px; z-index: 10}
+#igr_7 {position: absolute; top: 610px; left: 380px; z-index: 10}
+#igr_8 {position: absolute; top: 610px; left: 490px; z-index: 10}
+
+#igr_1_n {position: absolute; top: 190px; left: 20px; z-index: 1; display: block; }
+#igr_1_b {position: absolute; top: 190px; left: 20px; z-index: 10; display: none;}
+#igr_2_b {position: absolute; top: 190px; left: 20px; z-index: 10; display: none;}
+#igr_3_b {position: absolute; top: 190px; left: 20px; z-index: 10; display: none;}
+#igr_4_b {position: absolute; top: 190px; left: 20px; z-index: 10; display: none;}
+#igr_5_b {position: absolute; top: 190px; left: 20px; z-index: 10; display: none;}
+#igr_6_b {position: absolute; top: 190px; left: 20px; z-index: 10; display: none;}
+#igr_7_b {position: absolute; top: 190px; left: 20px; z-index: 10; display: none;}
+#igr_8_b {position: absolute; top: 190px; left: 20px; z-index: 10; display: none;}
+
+#igr_zakaz {position: absolute; top: 760px; left: 20px; background-color: #e5d2aa; width: 322px; height: 70px; text-align: center; border: 4px solid #6d7440; }
+#igr_zakaz span {font-size: 25px; color: black; position: relative; top: 18px; }
+
+#druzya_fb {position: absolute; top: 790px; left: 670px; cursor: pointer;}
+#druzya_vk {position: absolute; top: 790px; left: 700px; cursor: pointer;}
+
+.axes {
+    position: relative;
+    /*background: blue;*/
+    height: 750px;
+}
+
+#axes_img {display: none}
+#axes_1 {position: absolute; top: 20px; left: 250px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#axes_2 {position: absolute; top: 100px; left: 70px;}
+#axes_3 {position: absolute; top: 125px; left: 300px;}
+#axes_4 {position: absolute; top: 165px; left: 90px;}
+#axes_5 {position: absolute; top: 500px; left: 500px;}
+#axes_m {display: none}
+
+#axes_fb {position: absolute; top: 600px; left: 600px; cursor: pointer;}
+#axes_vk {position: absolute; top: 600px; left: 630px; cursor: pointer;}
+
+#axes_zakaz {position: absolute; top: 620px; left: 220px; background-color: #34340d; width: 300px; height: 50px; text-align: center; border-radius: 5px; box-shadow: 2px 2px 5px 3px;}
+#axes_zakaz span {font-size: 25px; color: white; position: relative; top: 10px; }
+
+
+.pochemu {
+    position: relative;
+    /*background: red;*/
+    height: 800px;
+}
+
+
+#pochemu_txt {position: absolute; top: 30px; left: 260px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#pochemu_1 {position: absolute; top: 130px; left: 200px;}
+#pochemu_2 {position: absolute; top: 210px; left: 200px;}
+#pochemu_3 {position: absolute; top: 290px; left: 200px;}
+#pochemu_4 {position: absolute; top: 370px; left: 200px;}
+#pochemu_5 {position: absolute; top: 450px; left: 200px;}
+#pochemu_6 {position: absolute; top: 530px; left: 200px;}
+#pochemu_7 {position: absolute; top: 610px; left: 200px;}
+
+#pochemu_img {position: absolute; top: 30px; left: -150px;}
+#pochemu_img_m {display: none}
+#pochemu_img_1 {position: absolute; top: 135px; left: 170px;}
+#pochemu_img_2 {position: absolute; top: 215px; left: 170px;}
+#pochemu_img_3 {position: absolute; top: 295px; left: 170px;}
+#pochemu_img_4 {position: absolute; top: 375px; left: 170px;}
+#pochemu_img_5 {position: absolute; top: 455px; left: 170px;}
+#pochemu_img_6 {position: absolute; top: 535px; left: 170px;}
+#pochemu_img_7 {position: absolute; top: 615px; left: 170px;}
+
+.otzovi {
+    position: relative;
+    /*background: blue;*/
+    height: 850px;
+}
+
+#otzovi_1 {position: absolute; top: 50px; left: 270px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#otzovi_2 {position: absolute; top: 150px; left: 50px; width: 650px; text-align: justify}
+#otzovi_3 {position: absolute; top: 450px; left: 50px; width: 650px; text-align: justify}
+
+#otzovi_img_1 {display: none }
+#otzovi_img_2 {display: none }
+
+
+.contact {
+    position: relative;
+    /*background: blue;*/
+    height: 1100px;
+}
+
+#contact_img {position: absolute; top: 300px; left: 90px; box-shadow: -2px -2px 5px 3px;}
+#contact_txt_1 {position: absolute; top: 0px; left: 250px; font-size: 40px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#contact_txt_2 {position: absolute; top: 80px; left: 130px; width: 500px; }
+#contact_form {position: absolute; top: 700px; left: 90px; }
+
+#contact_1 {position: absolute; top: 40px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 250px; height: 30px; }
+#contact_2 {position: absolute; top: 90px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 250px; height: 30px;}
+#contact_3 {position: absolute; top: 140px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 250px; height: 30px;}
+#contact_4 {position: absolute; top: 190px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 350px; height: 70px;}
+#contact_5 {position: absolute; top: 275px; left: 50px; color: white; background-color: #34340d; width: 150px; height: 30px; text-align: center; border-radius: 3px; box-shadow: 2px 2px 5px 3px black;}
+
+
+#foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+    font-size: 17px;
+    }
+
+#foot_1 {position: absolute; bottom:  15px; left: 0px; color: white; } 
+#foot_2 {position: absolute; bottom:  15px; left: 220px; color: white; }
+#foot_3 {position: absolute; bottom:  15px; left: 520px; color: white; }
+
+#foot_fb {position: absolute; bottom:  12px; left: 400px;  cursor: pointer; }
+#foot_vk {position: absolute; bottom:  12px; left: 430px;  cursor: pointer; }
+ 
+#foot_w {position: absolute; bottom:  15px; left: 495px;  }
+#foot_vv {position: absolute; bottom:  15px; left: 660px; width: 100px; height: 30px; background-color: #34340d; text-align: center; border-radius: 3px; box-shadow: 2px 2px 5px 3px black; }
+#foot_vv span { color: white; position: relative; top: 3px; }
+
+#fut {
+    position: absolute;
+    bottom: 0;
+    width: 1920px;
+    height: 60px;
+    background-color: #6d7440;
+    z-index: 7;
+    }
+
+@font-face {
+ 
+font-family: 'Segoe Print'; 
+
+src: url('../fonts/segoepr.ttf') format('truetype'); 
+font-style: normal; 
+font-weight: normal; 
+}         
+    
+@font-face {
+ 
+font-family: 'Candara'; 
+
+src: url('../fonts/Candara.ttf') format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 300px ) and (max-width: 700px){ /* Мобильный дизайн */
+
+html, body {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: Candara;
+    height: 100%;
+}
+
+li {display: inline;}
+
+a {text-decoration: none; color: black}
+
+
+.menu_m { position: absolute; top: 5px; right: 5px; z-index: 20}               
+.menu_min { display: none; z-index: 90;  position: absolute; top: 0px; right: 0px;}           
+.menu_m:hover .menu_min {display: block;}
+
+.pole {
+    position: relative;
+    margin: auto;
+    width: 340px;
+    z-index: 8;
+    height: 100%;
+    }
+
+#back_img {display: none}
+#back_img_pl {display: none}
+#back_img_m {z-index: 5;
+           position: absolute;
+           top: 60px;
+           display: block;}
+
+#back_img_post {z-index: 4;
+           position: relative;
+}
+
+#hat {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #6d7440;
+    z-index: 7;
+    box-shadow: 2px 2px 5px 3px;
+}
+
+.header {
+    position: relative;
+    /*background: red;*/
+    height: 550px;
+}
+
+#logo {position: absolute; top: 10px; left: 0px;}
+#slogo {display: none}
+#menu {display: none}
+#menu > li > a:hover {color: white}
+
+#zvonok {position: absolute; top: 7px; left:  100px; font-size: 19px; font-weight: bold; text-decoration: underline;}
+#zvonok > a:hover {color: white}
+
+#whatsapp {position: absolute; top: 33px; left: 100px;}
+#whatsapp_tel {position: absolute; top: 30px; left:  130px; font-weight: bold;}
+
+#head_txt_1 {position: absolute; top: 100px; left: 10px; font-size: 28px;  font-weight: bold; text-align: center}
+#head_txt_2 {position: absolute; top: 170px; left: 70px; font-size: 25px;  font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#head_txt_3 {position: absolute; top: 250px; left: 10px; font-size: 25px;  font-family: Segoe Print; font-weight: bold; color: #454d10;}
+#head_txt_4 {position: absolute; top: 280px; left: 10px; font-size: 25px;  font-family: Segoe Print; font-weight: bold; color: #454d10;}
+#druz {position: absolute; top: 400px; left: 70px; background-color: #34340d; width: 200px; height: 40px; text-align: center; border-radius: 5px; box-shadow: 2px 2px 5px 3px;}
+#druz span {font-size: 18px; color: white; position: relative; top: 8px; }
+
+.o_nas {
+    position: relative;
+    /*background: blue;*/
+    height: 850px;
+}
+
+#o_nas_1 {position: absolute; top:30px; left: 120px; font-size: 32px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#o_nas_2 {position: absolute; top: 90px; left: 0px; }
+#o_nas_3 {position: absolute; top: 120px; left: 0px; right: 0px;  }
+#o_nas_4 {display: none}
+#o_nas_5 {position: absolute; top: 620px; left: 10px; width: 320px;}
+#o_nas_6 {display: none}
+
+.druzya {
+    position: relative;
+    z-index: 1;
+    /*background: red;*/
+    height: 1150px;
+}
+
+#druzya_1 {position: absolute; top: 50px; left: 110px; font-size: 32px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#druzya_2 {position: absolute; top: 120px; left: 0px;}
+#druzya_3 {position: absolute; top: 170px; left: 0px;}
+#druzya_4 {position: absolute; top: 1120px; left: 0px; font-size: 16px;}
+
+#igr_1 {position: absolute; top: 830px; left: 10px; z-index: 10; width: 70px;}
+#igr_2 {position: absolute; top: 830px; left: 90px; z-index: 10; width: 70px;}
+#igr_3 {position: absolute; top: 830px; left: 170px; z-index: 10; width: 70px;}
+#igr_4 {position: absolute; top: 830px; left: 250px; z-index: 10; width: 70px;}
+#igr_5 {position: absolute; top: 970px; left: 10px; z-index: 10; width: 70px;}
+#igr_6 {position: absolute; top: 970px; left: 90px; z-index: 10; width: 70px;}
+#igr_7 {position: absolute; top: 970px; left: 170px; z-index: 10; width: 70px;}
+#igr_8 {position: absolute; top: 970px; left: 250px; z-index: 10; width: 70px;}
+
+#igr_1_n {position: absolute; top: 250px; left: 30px; z-index: 1; display: block; width: 280px }
+#igr_1_b {position: absolute; top: 250px; left: 30px; z-index: 10; display: none; width: 280px}
+#igr_2_b {position: absolute; top: 250px; left: 30px; z-index: 10; display: none; width: 280px}
+#igr_3_b {position: absolute; top: 250px; left: 30px; z-index: 10; display: none; width: 280px}
+#igr_4_b {position: absolute; top: 250px; left: 30px; z-index: 10; display: none; width: 280px}
+#igr_5_b {position: absolute; top: 250px; left: 30px; z-index: 10; display: none; width: 280px}
+#igr_6_b {position: absolute; top: 250px; left: 30px; z-index: 10; display: none; width: 280px}
+#igr_7_b {position: absolute; top: 250px; left: 30px; z-index: 10; display: none; width: 280px}
+#igr_8_b {position: absolute; top: 250px; left: 30px; z-index: 10; display: none; width: 280px}
+
+#igr_zakaz {position: absolute; top: 730px; left: 30px; background-color: #e5d2aa; width: 272px; height: 70px; text-align: center; border: 4px solid #6d7440; }
+#igr_zakaz span {font-size: 25px; color: black; position: relative; top: 18px; }
+
+#druzya_fb {position: absolute; top: 1117px; left: 260px; cursor: pointer;}
+#druzya_vk {position: absolute; top: 1117px; left: 290px; cursor: pointer;}
+
+.axes {
+    position: relative;
+
+    height: 550px;
+}
+
+#axes_img {display: none}
+#axes_1 {position: absolute; top: 20px; left: 50px; font-size: 32px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#axes_2 {position: absolute; top: 100px; left: 0px;}
+#axes_3 {position: absolute; top: 145px; left: 0px;}
+#axes_4 {display: none}
+#axes_5 {position: absolute; top: 500px; left: 500px;}
+#axes_m {position: absolute; top: 165px; left: 0px; width: 320px;}
+
+#axes_fb {position: absolute; top: 420px; left: 250px; cursor: pointer;}
+#axes_vk {position: absolute; top: 420px; left: 280px; cursor: pointer;}
+
+#axes_zakaz {position: absolute; top: 460px; left: 30px; background-color: #34340d; width: 250px; height: 40px; text-align: center; border-radius: 5px; box-shadow: 2px 2px 5px 3px;}
+#axes_zakaz span {font-size: 18px; color: white; position: relative; top: 10px; }
+
+
+.pochemu {
+    position: relative;
+
+    height: 800px;
+}
+
+
+#pochemu_txt {position: absolute; top: 100px; left: 70px; font-size: 32px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#pochemu_1 {position: absolute; top: 200px; left: 40px; font-weight: bold;}
+#pochemu_2 {position: absolute; top: 280px; left: 40px; font-weight: bold;}
+#pochemu_3 {position: absolute; top: 360px; left: 40px; font-weight: bold;}
+#pochemu_4 {position: absolute; top: 440px; left: 40px; font-weight: bold;}
+#pochemu_5 {position: absolute; top: 520px; left: 40px; font-weight: bold;}
+#pochemu_6 {position: absolute; top: 600px; left: 40px; font-weight: bold;}
+#pochemu_7 {position: absolute; top: 680px; left: 40px; font-weight: bold;}
+
+#pochemu_img {display: none}
+#pochemu_img_m {position: absolute; top: -50px; left: -50px;}
+#pochemu_img_1 {position: absolute; top: 200px; left: 10px;}
+#pochemu_img_2 {position: absolute; top: 280px; left: 10px;}
+#pochemu_img_3 {position: absolute; top: 360px; left: 10px;}
+#pochemu_img_4 {position: absolute; top: 440px; left: 10px;}
+#pochemu_img_5 {position: absolute; top: 520px; left: 10px;}
+#pochemu_img_6 {position: absolute; top: 600px; left: 10px;}
+#pochemu_img_7 {position: absolute; top: 680px; left: 10px;}
+
+.otzovi {
+    position: relative;
+
+    height: 800px;
+}
+
+#otzovi_1 {position: absolute; top: 30px; left: 100px; font-size: 32px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#otzovi_2 {display: none;}
+#otzovi_3 {position: absolute; top: 100px; left: 5px;  right: 5px; text-align: justify}
+
+#otzovi_img_1 {display: none; }
+#otzovi_img_2 {display: none; }
+
+
+.contact {
+    position: relative;
+
+    height: 1100px;
+}
+
+#contact_img {position: absolute; width: 340px; top: 380px; left: 0px; box-shadow: -2px -2px 5px 3px;}
+#contact_txt_1 {position: absolute; top: 0px; left: 80px; font-size: 32px; font-family: Segoe Print; font-weight: bold; color: #0b075f;}
+#contact_txt_2 {position: absolute; top: 80px; left: 0px; }
+#contact_form {position: absolute; top: 630px; left: 20px; }
+
+#contact_1 {position: absolute; top: 40px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 250px; height: 30px; }
+#contact_2 {position: absolute; top: 90px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 250px; height: 30px;}
+#contact_3 {position: absolute; top: 140px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 250px; height: 30px;}
+#contact_4 {position: absolute; top: 190px; left: 0px; box-shadow: inset 1px 1px 1px 1px; width: 250px; height: 70px;}
+#contact_5 {position: absolute; top: 290px; left: 50px; color: white; background-color: #34340d; width: 150px; height: 30px; text-align: center; border-radius: 3px; box-shadow: 2px 2px 5px 3px black;}
+
+
+#foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    font-size: 15px;
+    }
+
+#foot_1 {position: absolute; bottom:  20px; left: 0px; color: white; } 
+#foot_2 {position: absolute; bottom:  55px; left: 0px; color: white; }
+#foot_3 {display: none; }
+
+#foot_fb {position: absolute; bottom:  58px; left: 170px;  cursor: pointer; }
+#foot_vk {position: absolute; bottom:  58px; left: 210px;  cursor: pointer; }
+ 
+#foot_w {display: none}
+#foot_vv {position: absolute; bottom:  15px; left: 200px; width: 100px; height: 30px; background-color: #34340d; text-align: center; border-radius: 3px; box-shadow: 2px 2px 5px 3px black; color: white;}
+#foot_vv span { color: white; position: relative; top: 3px; }
+
+#fut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #6d7440;
+    z-index: 7;
+    }
+
+@font-face {
+ 
+font-family: 'Segoe Print'; 
+
+src: url('../fonts/segoepr.ttf') format('truetype'); 
+font-style: normal; 
+font-weight: normal; 
+}         
+    
+@font-face {
+ 
+font-family: 'Candara'; 
+
+src: url('../fonts/Candara.ttf') format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+}
